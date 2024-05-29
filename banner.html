@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shunのportfolio</title>
+  </head>
+
+  <body>
+    <main>
+      <div id="banner">
+        <div class="pc">
+          <div class="banner1">
+            <p>
+              <button class="modal_open"><img src="img/クリスマス.jpg" alt="ペットショップ クリスマスセール"></button>
+            </p>
+            <div class="modal" id="modal_window">
+              <div class="background_window"></div>
+              <div class="image_view">
+                <img src="img/クリスマス.jpg" alt="ペットショップ クリスマスセール">
+              </div>
+            </div>
+            <p>ペットショップ クリスマスセール</p>
+          </div>
+
+
+          <div class="banner2">
+            <p>
+              <button class="modal_open2"><img src="img/おせち.jpg" alt="おせち料理 早割予約受付"></button>
+            </p>
+            <div class="modal2" id="modal_window2">
+              <div class="background_window2"></div>
+              <div class="image_view2">
+                <img src="img/おせち.jpg" alt="おせち料理 早割予約受付">
+              </div>
+            </div>
+            <p>おせち料理 早割予約受付</p>
+          </div>
+
+          <div class="banner3">
+            <p>
+              <button class="modal_open3"><img src="img/母の日.jpg" alt="花屋広告 母の日"></button>
+            </p>
+            <div class="modal3" id="modal_window3">
+              <div class="background_window3"></div>
+              <div class="image_view3">
+                <img src="img/母の日.jpg" alt="花屋広告 母の日">
+              </div>
+            </div>
+            <p>花屋広告 母の日</p>
+          </div>
+          <div class="banner3">
+            <p>
+              <button class="modal_open4"><img src="img/転職サイト.jpg" alt="転職サイト WEBデザイナー志望募集"></button>
+            </p>
+            <div class="modal4" id="modal_window4">
+              <div class="background_window4"></div>
+              <div class="image_view4">
+                <img src="img/転職サイト.jpg" alt="転職サイト WEBデザイナー志望募集">
+              </div>
+            </div>
+            <p>転職サイト WEBデザイナー志望募集</p>
+          </div>
+          <div class="banner3">
+            <p>
+              <button class="modal_open5"><img src="img/トリートメント.jpg" alt="トリートメント広告"></button>
+            </p>
+            <div class="modal5" id="modal_window5">
+              <div class="background_window5"></div>
+              <div class="image_view5">
+                <img src="img/トリートメント.jpg" alt="トリートメント広告">
+              </div>
+            </div>
+            <p>トリートメント広告</p>
+          </div>
+          <div class="banner3">
+            <p>
+              <button class="modal_open6"><img src="img/一口チョコレート.jpg" alt="冬季限定一口チョコセール"></button>
+            </p>
+            <div class="modal6" id="modal_window6">
+              <div class="background_window6"></div>
+              <div class="image_view6">
+                <img src="img/一口チョコレート.jpg" alt="冬季限定一口チョコセール">
+              </div>
+            </div>
+            <p>冬季限定一口チョコセール</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="page-button"><a href="web-site2.html">&lt;BACK</a><a href="finaly.html">NEXT&gt;</a></div>
+    </main>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        let modal_class = ".modal";
+        $(modal_class).css({
+          position: "absolute",
+          width: "100%",
+          height: "100vh",
+          top: "0",
+          left: "0",
+          display: "none"
+        });
+
+        let bw_class = ".background_window";
+        $(bw_class).css({
+          position: "absolute",
+          top: "0",
+          left: "0",
+          backgroundColor: "rgba(50,50,50,0.9)",
+          width: "100%",
+          height: "100vh",
+          zIndex: "9990"
+        });
+
+        let iv_class = ".image_view";
+        $(iv_class).css({
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%,-50%)",
+          zIndex: "9999"
+        });
+
+        $(".modal_open").on("click", function () {
+
+          $("#modal_window").fadeIn();
+        });
+
+        $("img").on("click", function () {
+          $("#modal_window").fadeOut();
+        });
+      });
+
+      $(function () {
+        let modal_class = ".modal2";
+        $(modal_class).css({
+          position: "absolute",
+          width: "100%",
+          height: "100vh",
+          top: "0",
+          left: "0",
+          display: "none"
+        });
+
+        let bw_class = ".background_window2";
+        $(bw_class).css({
+          position: "absolute",
+          top: "0",
+          left: "0",
+          backgroundColor: "rgba(50,50,50,0.9)",
+          width: "100%",
+          height: "100vh",
+          zIndex: "9990"
+        });
+
+        let iv_class = ".image_view2";
+        $(iv_class).css({
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%,-50%)",
+          zIndex: "9999"
+        });
+
+        $(".modal_open2").on("click", function () {
+          $("#modal_window2").fadeIn();
+        });
+
+        $("img").on("click", function () {
+          $("#modal_window2").fadeOut();
+        });
+      });
+
+      $(function () {
+        let modal_class = ".modal3";
+        $(modal_class).css({
+          position: "absolute",
+          width: "100%",
+          height: "100vh",
+          top: "0",
+          left: "0",
+          display: "none"
+        });
+
+        let bw_class = ".background_window3";
+        $(bw_class).css({
+          position: "absolute",
+          top: "0",
+          left: "0",
+          backgroundColor: "rgba(50,50,50,0.9)",
+          width: "100%",
+          height: "100vh",
+          zIndex: "9990"
+        });
+
+        let iv_class = ".image_view3";
+        $(iv_class).css({
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%,-50%)",
+          zIndex: "9999"
+        });
+
+        $(".modal_open3").on("click", function () {
+
+          $("#modal_window3").fadeIn();
+        });
+
+        $("img").on("click", function () {
+          $("#modal_window3").fadeOut();
+        });
+      });
+
+      $(function () {
+        let modal_class = ".modal4";
+        $(modal_class).css({
+          position: "absolute",
+          width: "100%",
+          height: "100vh",
+          top: "0",
+          left: "0",
+          display: "none"
+        });
+
+        let bw_class = ".background_window4";
+        $(bw_class).css({
+          position: "absolute",
+          top: "0",
+          left: "0",
+          backgroundColor: "rgba(50,50,50,0.9)",
+          width: "100%",
+          height: "100vh",
+          zIndex: "9990"
+        });
+
+        let iv_class = ".image_view4";
+        $(iv_class).css({
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%,-50%)",
+          zIndex: "9999"
+        });
+
+        $(".modal_open4").on("click", function () {
+
+          $("#modal_window4").fadeIn();
+        });
+
+        $("img").on("click", function () {
+          $("#modal_window4").fadeOut();
+        });
+      });
+
+      $(function () {
+        let modal_class = ".modal5";
+        $(modal_class).css({
+          position: "absolute",
+          width: "100%",
+          height: "100vh",
+          top: "0",
+          left: "0",
+          display: "none"
+        });
+
+        let bw_class = ".background_window5";
+        $(bw_class).css({
+          position: "absolute",
+          top: "0",
+          left: "0",
+          backgroundColor: "rgba(50,50,50,0.9)",
+          width: "100%",
+          height: "100vh",
+          zIndex: "9990"
+        });
+
+        let iv_class = ".image_view5";
+        $(iv_class).css({
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%,-50%)",
+          zIndex: "9999"
+        });
+
+        $(".modal_open5").on("click", function () {
+
+          $("#modal_window5").fadeIn();
+        });
+
+        $("img").on("click", function () {
+          $("#modal_window5").fadeOut();
+        });
+      });
+
+      $(function () {
+        let modal_class = ".modal6";
+        $(modal_class).css({
+          position: "absolute",
+          width: "100%",
+          height: "100vh",
+          top: "0",
+          left: "0",
+          display: "none"
+        });
+
+        let bw_class = ".background_window6";
+        $(bw_class).css({
+          position: "absolute",
+          top: "0",
+          left: "0",
+          backgroundColor: "rgba(50,50,50,0.9)",
+          width: "100%",
+          height: "100vh",
+          zIndex: "9990"
+        });
+
+        let iv_class = ".image_view6";
+        $(iv_class).css({
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%,-50%)",
+          zIndex: "9999"
+        });
+
+        $(".modal_open6").on("click", function () {
+
+          $("#modal_window6").fadeIn();
+        });
+
+        $("img").on("click", function () {
+          $("#modal_window6").fadeOut();
+        });
+      });
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+/* ---------------------default */
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+/* ------------------------ALL */
+body {
+  margin: 0;
+  padding: 0;
+  color: #352f2e;
+  font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif !important;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: left;
+  line-height: 2;
+  -webkit-text-size-adjust: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 0;
+}
+
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin: 0 auto;
+}
+
+.page-button-top {
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+  margin-left: 800px;
+  font-size: 20px;
+}
+
+.page-button-top a {
+  color: #000;
+}
+
+.page-button {
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 700px;
+  font-size: 20px;
+}
+
+.page-button a {
+  color: #000;
+  margin: 0 50px;
+}
+
+/* ------------------------------------top */
+
+#top {
+  background-image: url(img/top-page.jpg);
+  height: 1753px;
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/* -------------------------------------about */
+
+#about {
+  background-image: url(img/about.jpg);
+  height: 1753px;
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/* ----------------------------------web-site1 */
+
+#web-site1 {
+  background-image: url(img/web-top.jpg);
+  height: 1742px;
+  width: 1240px;
+  margin: 0 auto;
+}
+
+#web-site1 img {
+  position: relative;
+  left: 35px;
+  top: 235px;
+  width: 685px;
+  height: 1424px;
+}
+
+/* ----------------------------------web-site2 */
+
+#web-site2 {
+  background-image: url(img/web-page.jpg);
+  height: 1542px;
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 211px;
+}
+
+#web-site2 p {
+  font-size: 30px;
+  margin-bottom: -15px;
+}
+
+.web-site2 {
+  width: 536px;
+  height: 700px;
+  margin-top: -20px;
+}
+
+.web-site2 img {
+  height: 668px;
+}
+
+.web-site2-2 {
+  width: 536px;
+  height: 700px;
+  margin-top: -70px;
+}
+
+.web-site2-2 img {
+  height: 668px;
+}
+
+/* ----------------------------------banner */
+
+.pc {
+  background-image: url(img/banner-page.jpg);
+  height: 1542px;
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 211px;
+}
+
+.resp {
+  display: none;
+}
+
+#banner p {
+  font-size: 30px;
+}
+
+.banner1 {
+  width: 560px;
+  height: 290px;
+}
+
+.banner1 img {
+  height: 235px;
+}
+
+.banner2 {
+  padding-top: 20px;
+  width: 560px;
+  height: 225px;
+}
+
+.banner2 p {
+  margin-top: 45px;
+}
+
+.banner3 {
+  margin-top: -110px;
+  width: 560px;
+  height: 520px;
+}
+
+.banner3 img {
+  height: 465px;
+}
+
+/* ------------------------------------top */
+
+#finaly {
+  background-image: url(img/Finally.jpg);
+  height: 1753px;
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/* -----------------------------------------------------------------
+スマホ
+----------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 87.5%;
+  }
+
+
+  .page-button {
+    margin-left: 450px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+
+
+}
